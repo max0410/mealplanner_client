@@ -1,0 +1,624 @@
+body {
+	background-color: var(--background);
+	font-family: 'muli', sans-serif;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+img {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none
+}
+
+h1 {
+	font-family: 'muli', sans-serif
+}
+
+:root {
+	--background: #FC9;
+	--foreground: #977390
+}
+
+#calendar {
+	transform: translate(0px, -250px);
+	border-radius: 20px;
+	transform: translate(0px, -254px)
+}
+
+#servingsOverride {
+	color: #ccc;
+	margin-left: 10px;
+	margin-right: 5px
+}
+
+#servingsOverrideInput {
+	width: 40px;
+	line-height: 15px;
+	transform: translate(0px, 2px);
+	margin-right: 0
+}
+
+#servingsApply {
+	border-radius: 10px;
+	transform: translate(0px, -2px);
+	font-size: 14px;
+	background-color: #ccc;
+	border: 0px solid
+}
+
+#servingsApply:hover {
+	background-color: #fff
+}
+
+#calendarbody {
+	height: auto;
+	background-color: #fff
+}
+
+table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0
+}
+
+#row1 th {
+	font-weight: normal;
+	height: 32px;
+	background-color: #eee;
+	vertical-align: middle
+}
+
+#row1 {
+	height: 32px;
+	padding: 0
+}
+
+th {
+	width: 13.7%;
+	border: 1px solid #785589;
+	margin-left: 0;
+	height: 90px;
+	font-weight: normal;
+	position: relative
+}
+
+tr th:first-child {
+	width: 4%;
+	background-color: #eee;
+	writing-mode: vertical-rl
+}
+
+.vert {
+	text-orientation: mixed;
+	writing-mode: vertical-lr
+}
+
+.vertInputCell {
+	height: 85px
+}
+
+.typeInput {
+	transform: rotate(-90deg) translate(-32px, -25px);
+	transform-origin: left 0;
+	position: absolute;
+	bottom: 0;
+	font-size: 13.5px
+}
+
+.reloadButton {
+	float: right;
+	width: 34px;
+	height: 34px;
+	margin-right: 15px;
+	margin-top: 3px;
+	border-radius: 10px;
+	border: 0;
+	background-color: #ccc
+}
+
+.reloadButton:hover {
+	background-color: #fff
+}
+
+.exportButton {
+	float: right;
+	width: 34px;
+	height: 34px;
+	margin-right: 15px;
+	margin-top: 3px;
+	border-radius: 10px;
+	border: 0;
+	background-color: #ccc
+}
+
+.exportButton:hover {
+	background-color: #fff
+}
+
+#reloadIcon {
+	float: right;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 17px;
+	top: 5px
+}
+
+#exportIcon {
+	float: right;
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	right: 67px;
+	top: 6px
+}
+
+.empty {
+	background: #969696
+}
+
+.emptyCheckmark {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 15px;
+	width: 15px
+}
+
+.emptyCheckmark:hover {
+	cursor: pointer
+}
+
+.mealcell:hover {
+	background-color: #ccc
+}
+
+.cellimage {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	margin-top: 2px;
+	margin-left: 2px
+}
+
+.celltext {
+	position: absolute;
+	top: 15px;
+	right: 4px;
+	width: 72%;
+	font-size: 12px;
+	text-align: left
+}
+
+.reloadMeal {
+	left: 140px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 15px;
+	width: 15px
+}
+
+.reloadMeal:hover {
+	cursor: pointer
+}
+
+.reloadRow {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 15px;
+	width: 15px
+}
+
+.reloadRow:hover {
+	cursor: pointer
+}
+
+.deleteMeal {
+	color: red;
+	position: absolute;
+	top: -2px;
+	right: 0;
+	font-size: 13
+}
+
+.deleteMeal:hover {
+	cursor: pointer
+}
+
+.dragMeal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 12px;
+	width: 12px
+}
+
+.dragMeal:hover {
+	cursor: grab
+}
+
+.cellservings {
+	position: absolute;
+	bottom: 0;
+	right: 2px;
+	font-size: 12px;
+	vertical-align: middle
+}
+
+.numservings {
+	height: 20px;
+	width: 37px;
+	transform: translate(-44px, 14px)
+}
+
+.numservingstext {
+	transform: translate(0px, -9px)
+}
+
+#accountManager {
+	width: 50%;
+	margin-left: 25%
+}
+
+input {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	vertical-align: bottom
+}
+
+hr {
+	margin-top: 0;
+	margin-bottom: 0;
+	border-color: var(--foreground)
+}
+
+h3 {
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+
+#mealselector {
+	height: 45%;
+	border-radius: 20px;
+	width: 60%;
+	height: 40%;
+	background-color: #fff
+}
+
+#mealeditor {
+	border-radius: 20px;
+	width: 35%;
+	height: 45%;
+	background-color: #fff;
+	transform: translate(177%, -110%)
+}
+
+#header {
+	background-color: var(--foreground);
+	padding-left: 10px;
+	color: #fff;
+	border-radius: 20px 20px 0px 0px;
+	margin-bottom: -10px
+}
+
+.check {
+	height: 18px;
+	width: 18px
+}
+
+#footer {
+	background-color: var(--foreground);
+	padding-left: 10px;
+	height: 30px;
+	color: #fff;
+	border-radius: 0px 0px 20px 20px;
+	margin-top: -10px
+}
+
+.addmealbutton {
+	height: 25px;
+	margin-top: 2px;
+	vertical-align: middle;
+	padding-top: 3px;
+	background-color: #ccc;
+	color: #000
+}
+
+.addmealbutton:hover {
+	background-color: #eee
+}
+
+.nutritionitem {
+	height: 40px;
+	padding-top: 10px
+}
+
+#meallist {
+	overflow-y: scroll;
+	height: 190px;
+	padding: 0;
+	margin-top: 0;
+	position: relative;
+	z-index: 10
+}
+
+#editor {
+	overflow-y: scroll;
+	height: 180px;
+	padding: 0;
+	margin-top: 0;
+	position: relative;
+	z-index: 10
+}
+
+.accordion {
+	background-color: #eee;
+	height: 40px;
+	color: #444;
+	cursor: pointer;
+	padding-left: 18px;
+	width: 100%;
+	text-align: left;
+	vertical-align: middle;
+	border: none;
+	outline: 0;
+	transition: 0.4s
+}
+
+.active,
+.accordion:hover {
+	background-color: #ccc
+}
+
+.panel {
+	padding-left: 18px;
+	padding-top: 0;
+	padding-bottom: 5px;
+	text-align: left;
+	background-color: #fff;
+	display: none;
+	overflow: hidden;
+	vertical-align: middle
+}
+
+.item {
+	border-bottom: 1px dotted
+}
+
+#servings {
+	position: absolute;
+	width: 40px;
+	transform: translate(-120px, 40px)
+}
+
+.addingredient {
+	margin-top: 10px;
+	border-bottom: 1px dotted
+}
+
+.addingredient select {
+	position: absolute
+}
+
+.addingredient input[type="text"] {
+	position: relative;
+	left: 108px;
+	bottom: 10px
+}
+
+input[type=number]:not(.numservings) {
+	width: 60px;
+	display: inline-block;
+	transform: translate(0px, -10px);
+	margin-right: 5px
+}
+
+select {
+	margin-right: 5px
+}
+
+.xicon {
+	color: #f0756e;
+	float: right;
+	margin-right: 10px;
+	vertical-align: middle;
+	font-size: 20px;
+	transform: translate(0, 12px);
+	cursor: pointer
+}
+
+.xicon[id="0"] {
+	color: #f0756e;
+	float: right;
+	margin-right: 10px;
+	vertical-align: middle;
+	font-size: 20px;
+	transform: translate(30px, 12px);
+	cursor: pointer
+}
+
+.plusicon {
+	color: #60cc6c;
+	float: right;
+	margin-right: 10px;
+	vertical-align: middle;
+	font-size: 35px;
+	transform: translate(0px, -5px);
+	cursor: pointer
+}
+
+textarea {
+	height: 100px;
+	width: 104%;
+	transform: translate(-4%, 0);
+	margin: 3% 0px 0px;
+	resize: vertical
+}
+
+p {
+	display: inline-block
+}
+
+.meal {
+	border: 1px solid #785589;
+	border-right: 0;
+	height: 40px;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-top: 1px;
+	padding-bottom: 20px;
+	position: relative;
+	z-index: 10
+}
+
+.meal:hover {
+	background-color: #ccc
+}
+
+.meallink {
+	text-decoration: none
+}
+
+.meallink:hover {
+	text-decoration: underline
+}
+
+.mealimage {
+	height: 38px;
+	width: 38px;
+	border-radius: 30%;
+	margin-right: 5px;
+	display: inline
+}
+
+.data1 {
+	width: 61%;
+	border-right: 1px dotted;
+	margin: 0;
+	display: inline-block
+}
+
+.type {
+	width: 15.7%;
+	margin: 0;
+	height: 38px;
+	border-right: 1px dotted;
+	display: inline-block;
+	text-align: center;
+	color: #666;
+	transform: translate(0, -8px);
+	z-index: 10;
+	position: relative
+}
+
+.category {
+	width: 11.3%;
+	margin: 0;
+	height: 38px;
+	border-right: 1px dotted;
+	display: inline-block;
+	text-align: center;
+	color: #666;
+	transform: translate(0, -8px)
+}
+
+.type div {
+	transform: translate(0px, 10px)
+}
+
+.category div {
+	transform: translate(0px, 10px)
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	float: right;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 0
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #f0756e;
+	-webkit-transition: .4s;
+	transition: .4s
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 21px;
+	width: 21px;
+	left: 1px;
+	bottom: 2px;
+	background-color: #fff;
+	-webkit-transition: .4s;
+	transition: .4s
+}
+
+input:checked+.slider {
+	background-color: #60cc6c
+}
+
+input:focus+.slider {
+	box-shadow: 0 0 1px #60cc6c
+}
+
+input:checked+.slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px)
+}
+
+.slider.round {
+	border-radius: 34px
+}
+
+.slider.round:before {
+	border-radius: 50%
+}
+
+#login,
+#signup {
+	background-color: #785589;
+	margin-bottom: 5px;
+	margin-right: 5px
+}
+
+#editImage {
+	height: 10px;
+	width: 10px;
+	transform: translate(0px, -3px)
+}
+
+#editImageButton {
+	padding: 0;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	transform: translate(-20px, 15px)
+}

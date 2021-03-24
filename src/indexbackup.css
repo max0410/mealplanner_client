@@ -1,0 +1,528 @@
+body {
+    background-color: #ffe8e8 ;
+    font-family: 'muli', sans-serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
+}
+
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  }
+
+h1 {
+    font-family: 'muli', sans-serif;
+}
+
+#calendar {
+  border-radius: 20px 20px 20px 20px;
+  transform: translate(0px,-250px)
+}
+
+#calendarbody {
+    height: auto;
+    background-color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+
+#row1 th {
+  font-weight: normal;
+  height: 32px;
+  background-color: #eee;
+  vertical-align: middle
+}
+
+#row1 {
+  height: 32px;
+  padding: 0px;
+  
+}
+
+th {
+  width: 13.7%;
+  border: 1px solid #785589;
+  margin-left: 0px;
+  height: 90px;
+  font-weight: normal;
+  position: relative;
+}
+
+tr th:first-child {
+  width: 4%;
+  background-color: #eee;
+  writing-mode: vertical-rl;
+}
+
+.vert {
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+}
+
+.reloadButton {
+  float: right;
+  width: 34px;
+  height: 34px;
+  margin-right: 15px;
+  margin-top: 3px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: #ccc;
+}
+
+.reloadButton:hover {
+  background-color: white;
+}
+
+.exportButton {
+  float: right;
+  width: 34px;
+  height: 34px;
+  margin-right: 15px;
+  margin-top: 3px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: #ccc;
+}
+
+.exportButton:hover {
+  background-color: white;
+}
+
+#reloadIcon {
+  float: right;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 17px;
+  top: 5px;
+}
+
+#exportIcon {
+  float: right;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  right: 67px;
+  top: 6px;
+}
+
+.mealcell:hover {
+  background-color: #ccc;
+}
+
+.cellimage {
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.celltext {
+  position: absolute;
+  top: 15px;
+  right: 4px;
+  width: 72%;
+  font-size: 12px;
+  text-align: left;
+}
+
+.reloadMeal {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 15px;
+  width: 15px;
+}
+
+.dragMeal {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 12px;
+  width: 12px;
+}
+
+.cellservings {
+  position: absolute;
+  bottom: 0px;
+  right: 2px;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.numservings {
+  height: 20px;
+  width: 37px;
+  transform: translate(-44px, 14px);
+}
+
+.numservingstext {
+  transform: translate(0px, -9px)
+}
+
+#accountManager {
+    width: 50%;
+    margin-left:25%;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    vertical-align: bottom;
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-color:  #785589;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#login, #signup {
+    background-color: #785589;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+#mealselector {
+    border-radius: 20px 20px 20px 20px;
+    width: 60%;
+    height: 40%;
+    background-color: white;
+    
+}
+
+#mealeditor {
+  border-radius: 20px 20px 20px 20px;
+  width: 35%;
+  height: 40%;
+  background-color: white;
+  transform: translate(177%,-108%)
+}
+
+#header {
+    background-color: #977390;
+    padding-left: 10px;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: -10px;
+}
+
+.check {
+  height: 18px;
+  width: 18px;
+}
+
+#footer {
+    background-color: #977390;
+    padding-left: 10px;
+    height: 30px;
+    color: white;
+    border-radius: 0px 0px 20px 20px;
+    margin-top: -10px;
+}
+
+.addmealbutton {
+  height: 25px;
+  margin-top: 2px;
+  vertical-align: middle;
+  padding-top: 3px;
+  background-color: #ccc;
+  color: black
+}
+
+.addmealbutton:hover {
+  background-color: #eee;
+}
+
+.nutritionitem {
+  height: 40px;
+  padding-top: 10px;
+}
+
+#meallist {
+    overflow-y: scroll;
+    height: 180px;
+    padding: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    position:relative;
+    z-index: 10;
+}
+
+#editor {
+  overflow-y: scroll;
+  height: 180px;
+  padding: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+  position:relative;
+  z-index: 10;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  height: 40px;
+  color: #444;
+  cursor: pointer;
+  padding-left: 18px;
+  width: 100%;
+  text-align: left;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding-left: 18px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  text-align: left;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.item {
+  border-bottom: 1px dotted gray;
+}
+
+#servings {
+  position: absolute;
+  width: 40px;
+  transform: translate(-120px,40px);
+}
+
+.addingredient {
+  margin-top: 10px;
+  border-bottom: 1px dotted gray;
+}
+
+.addingredient select {
+  position: absolute;
+}
+
+.addingredient input[type="text"] {
+  position: relative;
+  left: 108px;
+  bottom: 10px;
+} 
+
+input[type=number]:not(.numservings) {
+  width: 60px;
+  display: inline-block;
+  transform: translate(0px,-10px);
+  margin-right: 5px;
+}
+
+select {
+  margin-right: 5px;
+}
+
+.xicon {
+  color: #f0756e;
+  float: right; 
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 20px;
+  transform: translate(0,12px);
+  cursor: pointer;
+}
+
+.xicon[id="0"] {
+  color: #f0756e;
+  float: right; 
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 20px;
+  transform: translate(30px,12px);
+  cursor: pointer;
+}
+
+.plusicon {
+  color: #60cc6c;
+  float: right; 
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 35px;
+  transform: translate(0px,-5px);
+  cursor: pointer;
+}
+
+textarea {
+  height: 100px;
+  width: 104%;
+  transform: translate(-4%,0);
+  margin: 0px;
+  resize: vertical;
+  margin-top: 3%;
+}
+
+
+p {
+  display: inline-block;
+}
+
+.meal {
+    border: 1px solid #785589;
+    border-right: 0px;
+    height: 40px;
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    position:relative;
+    z-index: 10;
+}
+
+.meal:hover {
+  background-color: #ccc;
+}
+
+.meallink {
+    text-decoration: none; 
+}
+
+.meallink:hover {
+    text-decoration: underline; 
+}
+
+.mealimage {
+    height: 38px;
+    width: 38px;
+    border-radius: 30%;
+    margin-right: 5px;
+    display: inline;
+}
+
+.data1 {
+    width: 61%;
+    border-right: 1px dotted gray;
+    margin: 0px;
+    display: inline-block;
+}
+
+.type {
+    width: 15.7%;
+    margin-left: 5px;
+    height: 38px;
+    border-right: 1px dotted gray;
+    display: inline-block;
+    margin: 0px;
+    text-align: center;
+    color: #666666;
+    transform: translate(0, -8px);
+    z-index: 10;
+    position:relative
+}
+
+.category {
+    width: 11.3%;
+    margin-left: 5px;
+    height: 38px;
+    border-right: 1px dotted gray;
+    display: inline-block;
+    margin: 0px;
+    text-align: center;
+    color: #666666;
+    transform: translate(0, -8px)
+}
+
+.type div {
+    transform: translate(0px, 10px);
+}
+
+.category div {
+    transform: translate(0px, 10px);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 0px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f0756e;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 21px;
+    left: 1px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #60cc6c;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #60cc6c;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+

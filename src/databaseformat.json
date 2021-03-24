@@ -1,0 +1,65 @@
+{
+    "UID": {
+        "meals": {
+            "Meal": {}
+        },
+        "types": ["Breakfast","Lunch","Dinner"],
+        "days": {
+            "Sunday": true,
+            "Monday": true,
+            "Tuesday": true,
+            "Wednesday": true,
+            "Thursday": true,
+            "Friday": true,
+            "Saturday": true
+        },
+        "rulesets": [
+            [
+                {
+                    "select": "day",
+                    "parameters": ["All"],
+                    "rules": [
+                        {
+                            "rule": "Total",
+                            "parameters": {
+                                "condition": "at most",
+                                "amount": 1,
+                                "category": "all",
+                                "for": "each"
+                            }
+                        },
+                        {
+                            "rule": "Total",
+                            "parameters": {
+                                "condition": "at most",
+                                "amount": 5,
+                                "category": "all",
+                                "for": "all"
+                            }
+                        },
+                        {
+                            "rule": "Repeats",
+                            "parameters": {
+                                "amount": 2,
+                                "category": "all"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "select": "type",
+                    "parameters": ["All"],
+                    "rules": [
+                        {
+                            "rule": "Repeats",
+                            "parameters": {
+                                "amount": 2,
+                                "category": "all"
+                            }
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+}

@@ -1,0 +1,1370 @@
+html {
+	overflow-y: hidden;
+}
+
+body {
+	background-color: var(--background);
+	font-family: 'muli', sans-serif;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	overflow: hidden;
+}
+
+#homepage {
+	font-family: Georgia, Tahoma;
+}
+#homepage h1{
+	font-size: 70px;
+	font-family: Georgia, Tahoma;
+}
+#homepage .bgimg {
+	min-height: 100%;
+	background-position: center;
+	background-size: cover;
+	margin-top: 12%;
+}
+#homepage #burgerImg {
+	margin-top: 5px;
+	z-index: -100;
+}
+#homepage .slogan {
+	display: block;
+	color:#977390;
+	margin-bottom: 0px;
+	z-index:100
+}
+#homepage button {
+	margin-bottom: 10px;
+}
+
+#root {
+	height: 1125px;
+}
+
+img {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none
+}
+
+h1 {
+	font-family: 'muli', sans-serif
+}
+
+:root {
+	--background: #FC9;
+	--foreground: #977390;
+	--border-radius: 15px;
+}
+
+#loading {
+	position: fixed;
+	width: 50%;
+	left: 25%;
+	top: 38%;
+	z-index: 2000;
+	text-align: center;
+}
+
+#loadingAnimation {
+	position: absolute;
+	display: block;
+  	width: 15%;
+	z-index: 2000;
+	left: 44%;
+}
+
+#loadingTip {
+	z-index: 2000;
+	margin-top: 15%;
+	font-style: italic;
+	color: var(--foreground);
+}
+
+#loadingOverlay {
+	width:100%; 
+	height: 100%;
+    z-index:500; 
+    left:0;/*IE*/ 
+    top:0%; 
+    font-size:0.8em; 
+    text-align:center; 
+    position:fixed; 
+    background-color: var(--background);
+}
+
+#calendar {
+	transform: translate(0px, -250px);
+	border-radius: var(--border-radius);
+	transform: translate(0px, -254px);
+  margin-bottom: 0px;
+}
+
+#calendarExport {
+	border-radius: var(--border-radius);
+  margin-bottom: 0px;
+}
+
+#savedAutomatically {
+	color: #ccc;
+	margin-left: 10px;
+	margin-right: 5px;
+	transform: translate(0px, 5px);
+	font-style: italic;
+	font-size: 14px;
+}
+
+#servingsOverride {
+	color: #ccc;
+	margin-left: 10px;
+	margin-right: 5px
+}
+
+#servingsOverrideInput {
+	width: 40px;
+	line-height: 15px;
+	transform: translate(0px, 2px);
+	margin-right: 0;
+}
+
+#servingsApply {
+	border-radius: 10px;
+	transform: translate(0px, -2px);
+	font-size: 14px;
+	background-color: #ccc;
+	border: 0px solid
+}
+
+#servingsApply:hover {
+	background-color: #fff
+}
+
+#calendarbody {
+	height: auto;
+	background-color: #fff
+}
+
+table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0
+}
+
+#row1 th {
+	font-weight: normal;
+	height: 32px;
+	background-color: #eee;
+	vertical-align: middle
+}
+
+#row1 {
+	height: 32px;
+	padding: 0
+}
+
+th:not(.rule tr th) {
+	width: 13.7%;
+	border: 1px solid #785589;
+	margin-left: 0;
+	height: 90px;
+	font-weight: normal;
+	position: relative
+}
+
+tr th:first-child:not(.ruleName) {
+	width: 4%;
+	background-color: #eee;
+	writing-mode: vertical-rl
+}
+
+.vert {
+	text-orientation: mixed;
+	writing-mode: vertical-lr
+}
+
+.vertInputCell {
+	height: 85px
+}
+
+.typeInput {
+	transform: rotate(-90deg) translate(-32px, -25px);
+	transform-origin: left 0;
+	position: absolute;
+	bottom: 0;
+	font-size: 13.5px
+}
+
+.exportButtonList, .reloadButtonList {
+  float: right;
+	width: 34px;
+	height: 34px;
+	border-radius: 10px;
+	border: 0;
+	background-color: #ccc;
+  margin-right: 14px;
+  transform: translate(0px,-43px);
+}
+
+.exportButton, .reloadButton, .editRulesButton {
+	float: right;
+	  width: 34px;
+	  height: 34px;
+	  border-radius: 10px;
+	  border: 0;
+	  background-color: #ccc;
+	margin-right: 14px;
+	transform: translate(0px,3px);
+  }
+
+.exportButtonList:hover, .reloadButtonList:hover, .editRulesButton:hover {
+	background-color: white
+}
+
+.exportButton:hover, .reloadButton:hover {
+	background-color: white
+}
+
+#calendarRulesetSelector {
+	float: right;
+	margin-right: 8px;
+	height: 25px;
+	transform: translate(0px,8px);
+}
+
+#exportIconList {
+	float: right;
+	width: 27px;
+	height: 27px;
+  transform: translate(4px, -1px)
+}
+
+#reloadIconList {
+  float: right;
+	width: 30px;
+	height: 30px;
+  transform: translate(3px, 0px)
+}
+
+
+#reloadIcon {
+	float: right;
+	width: 30px;
+	height: 30px;
+	transform: translate(3px, 0px)
+}
+
+#exportIcon {
+	float: right;
+	width: 26px;
+	height: 26px;
+	transform: translate(4px, -1px)
+}
+
+#editRulesIcon {
+	float: right;
+	width: 27px;
+	height: 27px;
+	transform: translate(4px, 0px)
+}
+
+.empty {
+	background: #969696
+}
+
+.emptyCheckmark {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 15px;
+	width: 15px
+}
+
+.emptyCheckmark:hover {
+	cursor: pointer
+}
+
+.mealcell:hover {
+	background-color: #ccc
+}
+
+.cellimage {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	margin-top: 2px;
+	margin-left: 2px
+}
+
+.celltext {
+	position: absolute;
+	top: 15px;
+	left: 42px;
+	width: 72%;
+	font-size: 12px;
+	text-align: left
+}
+
+celltextExport {
+	position: absolute;
+	text-align: left
+}
+
+.reloadMeal {
+	position: absolute;
+	top: 0;
+	right: 12px;
+	height: 15px;
+	width: 15px
+}
+
+.reloadMeal:hover {
+	cursor: pointer
+}
+
+.reloadRow {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 15px;
+	width: 15px
+}
+
+.reloadRow:hover {
+	cursor: pointer
+}
+
+.deleteMeal {
+	color: red;
+	position: absolute;
+	top: -2px;
+	right: 0;
+	font-size: 13
+}
+
+.deleteMeal:hover {
+	cursor: pointer
+}
+
+.dragMeal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 12px;
+	width: 12px
+}
+
+.dragMeal:hover {
+	cursor: grab
+}
+
+.cellservings {
+	position: absolute;
+	bottom: 0;
+	right: 2px;
+	font-size: 12px;
+	vertical-align: middle
+}
+
+.numservings {
+	height: 20px;
+	width: 37px;
+	transform: translate(-44px, 14px)
+}
+
+.numservingstext {
+	transform: translate(0px, -9px)
+}
+
+#accountManager {
+	position: fixed;
+	width: 50%;
+	margin-left: 25%
+}
+
+input {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	vertical-align: bottom
+}
+
+hr {
+	margin-top: 0;
+	margin-bottom: 0;
+	border-color: var(--foreground)
+}
+
+h3 {
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+
+#logout {
+	transform: translate(0px,-640px);
+	float:right;
+	margin-right: 10px;
+	color: var(--foreground);
+	display: inline-block;
+}
+
+#logout:hover {
+	cursor: pointer;
+}
+
+#mealselector {
+	height: 45%;
+	border-radius: var(--border-radius);
+	width: 60%;
+	height: 40%;
+	background-color: #fff;
+  margin-bottom: 0px;
+}
+
+#filterParent {
+	display: inline-block;
+	position: absolute;
+	height: 10px;
+	right: 40%;
+}
+
+#filterText {
+	transform: translate(0px,0px);
+	margin-right: 5px;
+}
+
+#filterButton {
+	background-color: #ccc;
+	height: 34px;
+	width: 34px;
+	transform: translate(0px,-1px)
+}
+
+#filterIcon {
+	height: 25px;
+	width: 25px;
+	transform: translate(-11px, -2px)
+}
+
+#shoppinglist {
+  border-radius: var(--border-radius);
+  width: 46%;
+  background-color: white;
+  transform: translate(0%, -245px);
+  margin-bottom: 0px
+}
+
+#shoppinglistExport {
+	border-radius: var(--border-radius);
+  width: 46%;
+  background-color: rgb(124, 111, 111);
+  margin-bottom: 0px
+}
+
+#shoppinglistbody {
+  height: 300px;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  transform: translate(0px, -39px);
+  margin-bottom: -39px;
+  position: relative;
+}
+
+#shoppinglistbodyExport {
+	overflow: scroll;
+	overflow-x: hidden;
+	width: 100%;
+	transform: translate(0px, -39px);
+	margin-bottom: -39px;
+	position: relative;
+}
+
+#listCol1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#listCol1 {
+	position: absolute;
+	top: 0px;
+	left: 400px;
+}
+
+#listCol3 {
+	position: absolute;
+	top: 0px;
+	left: 800px;
+}
+
+.ingredient {
+	border-bottom: 1px solid #785589;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 20px;
+	position: relative;
+	margin-top: 0px;
+	height: 38px;
+}
+
+.ingredient:hover {
+	background-color: #ccc;
+}
+
+.ingredientExport {
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 20px;
+	position: relative;
+	margin-top: 0px;
+	height: 38px;
+}
+
+.ingredientCheckbox {
+	margin-right: 8px;
+	height: 20px;
+	width: 20px;
+}
+
+#noIngredients {
+	position: absolute;
+	text-align: center;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.dayCheck {
+	margin-right: 5px;
+	font-size: 0.8rem;
+}
+
+.dayCheck input {
+	margin-right: 3px;
+	transform: translate(0px,-1px)
+}
+
+#applyAll {
+	border-radius: 10px;
+	font-size: 0.8rem;
+	background-color: #ccc;
+	border: 0px solid
+}
+
+#applyAll:hover {
+	background-color: white
+}
+
+#nutritioninfo {
+	border-radius: var(--border-radius);
+  	width: 49.6%;
+  	background-color: white;
+  	transform: translate(96.5%, -632px);
+  	margin-bottom: 0px
+}
+
+#servingsNutrition {
+	color: #ccc;
+	margin-left: 10px;
+	margin-right: 5px
+}
+
+#servingsNutritionInput {
+	width: 40px;
+	line-height: 15px;
+	transform: translate(0px, 2px);
+	margin-right: 0;
+}
+
+.nutButton {
+	transform: translate(0px, 3px);
+	margin-bottom: -10px;
+}
+
+#nutritioninfobody {
+	height: 302px;
+}
+
+.nutritionTab {
+	width: 12.5%;
+	font-size: 12px;
+	border: 1px var(--foreground) solid;
+	border-top: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.nutritionTab:hover {
+	background-color: #ccc;
+}
+
+#nutitionNavBar {
+	width: 100%;
+	z-index: 100;
+}
+
+.nutritionInfoElement {
+	padding-top: 11px;
+	padding-bottom: 12px;
+	padding-left: 6px;
+	border-bottom: 1px var(--foreground) solid;
+}
+
+.nutritionInfoElement:hover {
+	background-color: #ccc;
+}
+
+.nutritionDescriptor {
+	font-weight: bold;
+}
+
+.nutritionNumber {
+	margin-left: 3px;
+}
+
+#warning {
+	width: 50%;
+	position: fixed;
+	left: 25%;
+	top: 25%;
+	border-radius: var(--border-radius);
+	background-color: white;
+	z-index: 1000;
+}
+
+#warningBody {
+	height: 90px;
+}
+
+#warningText {
+	margin-top: 20px;
+	text-align: center;
+	
+}
+
+#confirmWarningButton {
+	margin-left: 37.2%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 10px;
+	width: 25%;
+	border-radius: 10px;
+	border: 0px;
+	font-size: 18px;
+	background-color: #f0756e;
+	color: white;
+}
+
+#warningCheck {
+	margin-bottom: 6px;
+}
+
+#checkText {
+	display: inline-block;
+	margin-top: 5px;
+}
+
+#overlay {
+	width:100%; 
+	height: 100%;
+    z-index:500; 
+    left:0;/*IE*/ 
+    top:0%; 
+    font-size:0.8em; 
+    text-align:center; 
+    position:fixed; 
+    background-color:#000;
+	opacity: 0.6;
+}
+
+#ruleEditor {
+	width: 70%;
+	position: fixed;
+	left: 15%;
+	top: 15%;
+	border-radius: var(--border-radius);
+	background-color: white;
+	z-index: 1000;
+}
+
+#rulesEditorBody {
+	height: 320px;
+	overflow-y: scroll;
+}
+
+#rulesEditorBody .panel {
+	padding-bottom: 0px;
+}
+
+#addSelectorButton {
+	display: inline-block;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 10px;
+	border: 0;
+	background-color: #ccc;
+  	margin-right: 14px;
+	transform: translate(0px, 3px);
+}
+
+#addSelectorButton:hover {
+	background-color: white;
+}
+
+#rulesetSelector {
+	float: right;
+	transform: translate(0px, 5px);
+}
+
+.selectorSection1 {
+	display: inline-block;
+	border-right: 1px solid #474747;
+}
+
+.selectorSection2 {
+	margin-left: 5px;
+	display: inline-block;
+}
+
+.selectText {
+	margin-right: 5px;
+	color: black;
+}
+
+#select {
+	height: 27px;
+}
+
+.selectorParameter {
+	height: 27px;
+	width: 100px;
+	margin-right: 5px;
+}
+
+.selectSelector {
+	width: 100%;
+	height: 27px;
+	margin: 0px;
+	text-align-last:center;
+}
+
+.addParameter {
+	margin-right: 5px;
+	font-size: 20px;
+}
+
+.removeParameter {
+	font-size: 20px;
+	display: inline-block;
+}
+
+.rule tr th {
+	font-weight: normal;
+	height: 40px;
+}
+
+.rule tr {
+	padding: 0px;
+}
+
+.ruleCondition {
+	display: inline-block;
+	width: 100px;
+	margin-bottom: 10px;
+	height: 27px;
+	transform: translate(0px,4px);
+	margin-left: 5px;
+}
+
+.forSelectorSelect {
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-left: 2px;
+	height: 27px;
+	transform: translate(0px,-2px)
+}
+
+.ruleName {
+	display: table-cell;
+	width: 9%;
+	text-align: center;
+	
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	color: white;
+}
+
+.ruleParameters {
+	display: inline-block;
+	border-bottom: 1px solid var(--foreground);
+	width: 100%;
+}
+
+.catgeoryInput {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.mealsText {
+	display: inline-block;
+	transform: translate(0px, 5px)
+}
+
+.filterRuleText {
+	display: inline-block;
+	vertical-align: center;
+	transform: translate(0px, -7px);
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.filterRuleText2 {
+	display: inline-block;
+	vertical-align: center;
+	transform: translate(0px, -7px);
+	margin-right: 5px;
+}
+
+.forSelector {
+	display: inline-block;
+	margin-left: 5px;
+	transform: translate(0px, 6px)
+}
+
+.rule input[type="number"] {
+	display: inline-block;
+	width: 50px;
+}
+
+#import {
+	width: 50%;
+	position: fixed;
+	left: 25%;
+	top: 27%;
+	border-radius: var(--border-radius);
+	background-color: white;
+	z-index: 1000;
+}
+
+#importBody {
+	padding: 20px;
+	text-align: center;
+}
+
+#import p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#importRecipeButton {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 5px;
+	margin-top: 10px;
+	width: 20%;
+	border-radius: 10px;
+	border: 0px;
+	background-color: #6076cc;
+	color: white;
+	transform: translate(0px,-2px)
+}
+
+#export {
+	width: 50%;
+	position: fixed;
+	left: 25%;
+	top: 16%;
+	border-radius: var(--border-radius);
+	background-color: white;
+	z-index: 1000;
+}
+
+.exitExport, .exitWarning, .exitRulesEditor {
+	float: right;
+	width: 34px;
+	height: 34px;
+	margin-right: 15px;
+	margin-top: 3px;
+	font-size: 25px;
+	border-radius: 10px;
+	border: 0;
+	background-color: #ccc
+}
+
+.exitExport:hover, .exitWarning:hover, .exitRulesEditor:hover {
+	background-color: white;
+}
+
+#exportBody {
+	height: 350px;
+}
+
+.typeInputExport {
+	writing-mode: vertical-lr;
+	text-orientation: mixed;	
+	position: absolute;
+	font-size: 20px;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+#exportContentParent {
+	height: 250px;
+	width: 250px;
+	border: 1px solid var(--foreground);
+	position: absolute;
+	top: 22%;
+	left: 12%;
+}
+
+#exportImage {
+	position: absolute;
+}
+
+#exportButtons {
+	position: absolute;
+	top: 22%;
+	left: 325px;
+	height: 250px;
+	width: 200px;
+	padding: 0px;
+}
+
+.exportChoice {
+	width: 100%;
+	height: 33.33%;
+	border: 1px solid var(--foreground);
+}
+
+.exportChoice:hover {
+	background-color: #ccc;
+}
+
+#mealeditor {
+	border-radius: var(--border-radius);
+	width: 35%;
+	height: 45%;
+	background-color: #fff;
+	transform: translate(177%, -110%);
+  	margin-bottom: 0px;
+}
+
+
+
+#deleteMealButtonEditor, #importRecipe, #deleteRuleset, #addRuleset {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	border-radius: 10px;
+	border: 0;
+	background-color: #ccc;
+  	margin-right: 14px;
+	float: right;
+	transform: translate(0px, 3px);
+}
+
+#deleteRuleset, #addRuleset {
+	width: 26px;
+	height: 26px;
+	transform: translate(0px, 2px);
+	border-radius: 7px;
+}
+
+#addRuleset {
+	margin-right: 5px;
+}
+
+#deleteMealButtonEditor:hover, #importRecipe:hover, #deleteRuleset:hover, #addRuleset:hover {
+	background-color: white;
+}
+
+#deleteMealIcon, #importRecipeIcon {
+	height: 25px;
+	width: 25px;
+	transform: translate(-2px, -1px);
+}
+
+#deleteRulesetIcon {
+	height: 22px;
+	width: 22px;
+	transform: translate(-4px, 0px);
+}
+
+#addRulesetIcon {
+	height: 23px;
+	width: 22px;
+	transform: translate(-3px, 0px);
+}
+
+
+
+#header {
+	background-color: var(--foreground);
+	padding-left: 10px;
+	color: #fff;
+	border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+	margin-bottom: -10px
+}
+
+.check {
+	height: 18px;
+	width: 18px
+}
+
+#footer {
+	background-color: var(--foreground);
+	padding-left: 10px;
+	height: 30px;
+	color: #fff;
+	border-radius: 0px 0px var(--border-radius) var(--border-radius);
+	margin-top: -10px
+}
+
+.selecttogglebutton {
+	height: 25px;
+	margin-top: 2px;
+	vertical-align: middle;
+	padding-top: 3px;
+	background-color: #ccc;
+	color: #000;
+	float: right;
+	margin-right: 10px;
+}
+
+.addmealbutton {
+	height: 25px;
+	margin-top: 2px;
+	vertical-align: middle;
+	padding-top: 3px;
+	background-color: #ccc;
+	color: #000
+}
+
+.addmealbutton:hover {
+	background-color: #eee
+}
+
+.nutritionitem {
+	height: 40px;
+	padding-top: 10px
+}
+
+#meallist {
+	overflow-y: scroll;
+	height: 190px;
+	padding: 0;
+	margin-top: 0;
+	position: relative;
+	z-index: 10
+}
+
+#editor {
+	overflow-y: scroll;
+	height: 180px;
+	padding: 0;
+	margin-top: 0;
+	position: relative;
+	z-index: 10
+}
+
+.accordion, .accordionSelector {
+	background-color: #eee;
+	height: 40px;
+	color: #444;
+	cursor: pointer;
+	padding-left: 18px;
+	width: 100%;
+	text-align: left;
+	vertical-align: middle;
+	border: none;
+	outline: 0;
+	transition: 0.4s
+}
+
+.active,
+.accordion:hover,
+.accordionSelector:hover {
+	background-color: #ccc
+}
+
+.panel {
+	padding-left: 18px;
+	padding-top: 0;
+	padding-bottom: 5px;
+	text-align: left;
+	background-color: #fff;
+	display: none;
+	overflow: hidden;
+	vertical-align: middle
+}
+
+.item {
+	border-bottom: 1px dotted
+}
+
+#servings {
+	position: absolute;
+	width: 40px;
+	transform: translate(-120px, 40px)
+}
+
+.addingredient {
+	margin-top: 10px;
+	border-bottom: 1px dotted
+}
+
+.addingredient select {
+	position: absolute
+}
+
+.addingredient input[type="text"] {
+	position: relative;
+	left: 108px;
+	bottom: 10px
+}
+
+#editor input[type=number]:not(.numservings, #servings) {
+	width: 60px;
+	display: inline-block;
+	transform: translate(0px, -10px);
+	margin-right: 5px
+}
+
+select {
+	margin-right: 5px
+}
+
+.xicon {
+	color: #f0756e;
+	float: right;
+	margin-right: 10px;
+	vertical-align: middle;
+	font-size: 20px;
+	transform: translate(0, 12px);
+	cursor: pointer
+}
+
+.xicon[id="0"] {
+	color: #f0756e;
+	float: right;
+	margin-right: 10px;
+	vertical-align: middle;
+	font-size: 20px;
+	transform: translate(30px, 12px);
+	cursor: pointer
+}
+
+.rule .xicon {
+	font-size: 22px;
+	transform: translate(0px, 5px);
+}
+
+.accordionSelector .xicon {
+	font-size: 22px;
+	margin-right: 6px;
+	transform: translate(0px, 2px);
+}
+
+.ingredient .xicon {
+	transform: translate(0px, 3px);
+}
+
+.plusicon {
+	color: #60cc6c;
+	float: right;
+	margin-right: 10px;
+	vertical-align: middle;
+	font-size: 35px;
+	transform: translate(0px, -5px);
+	cursor: pointer
+}
+
+.plusiconrule {
+	color: #60cc6c;
+	float: right;
+	margin-right: 8px;
+	vertical-align: middle;
+	font-size: 35px;
+	transform: translate(0px, -7px);
+	cursor: pointer
+}
+
+textarea {
+	height: 100px;
+	width: 104%;
+	transform: translate(-4%, 0);
+	margin: 3% 0px 0px;
+	resize: vertical
+}
+
+p {
+	display: inline-block
+}
+
+.meal {
+	border: 1px solid #785589;
+	border-right: 0;
+	height: 40px;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-top: 1px;
+	padding-bottom: 20px;
+	position: relative;
+	z-index: 10
+}
+
+.meal:hover {
+	background-color: #ccc
+}
+
+.meallink {
+	text-decoration: none
+}
+
+.meallinkExport {
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.meallink:hover {
+	text-decoration: underline
+}
+
+.mealimage {
+	height: 38px;
+	width: 38px;
+	border-radius: 30%;
+	margin-right: 5px;
+	display: inline
+}
+
+.data1 {
+	width: 61%;
+	border-right: 1px dotted;
+	margin: 0;
+	display: inline-block
+}
+
+.type {
+	width: 15.7%;
+	margin: 0;
+	height: 38px;
+	border-right: 1px dotted;
+	display: inline-block;
+	text-align: center;
+	color: #666;
+	transform: translate(0, -8px);
+	z-index: 10;
+	position: relative
+}
+
+.category {
+	width: 11.3%;
+	margin: 0;
+	height: 38px;
+	border-right: 1px dotted;
+	display: inline-block;
+	text-align: center;
+	color: #666;
+	transform: translate(0, -8px)
+}
+
+.type div {
+	transform: translate(0px, 10px)
+}
+
+.category div {
+	transform: translate(0px, 10px)
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	float: right;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 0
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #f0756e;
+	-webkit-transition: .4s;
+	transition: .4s
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 21px;
+	width: 21px;
+	left: 1px;
+	bottom: 2px;
+	background-color: #fff;
+	-webkit-transition: .4s;
+	transition: .4s
+}
+
+input:checked+.slider {
+	background-color: #60cc6c
+}
+
+input:focus+.slider {
+	box-shadow: 0 0 1px #60cc6c
+}
+
+input:checked+.slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px)
+}
+
+.slider.round {
+	border-radius: 34px
+}
+
+.slider.round:before {
+	border-radius: 50%
+}
+
+#login,
+#signup {
+	background-color: #785589;
+	margin-bottom: 5px;
+	margin-right: 5px
+}
+
+#editImage {
+	height: 10px;
+	width: 10px;
+	transform: translate(0px, -3px)
+}
+
+#editImageButton {
+	padding: 0;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	transform: translate(-20px, 15px)
+}
